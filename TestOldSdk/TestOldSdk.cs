@@ -55,10 +55,10 @@ namespace TestSftpSdk
         static void Main(string[] args)
         {
             Jhost = JObject.Parse(File.ReadAllText(@"../host.json"));
+            var host = Jhost["host"].ToString();
+            var port = int.Parse(Jhost["port"].ToString());
             var userName = Jhost["username"].ToString();
             var password = Jhost["password"].ToString();
-            var host = Jhost["hostname"].ToString();
-            var port = int.Parse(Jhost["port"].ToString());
             var filePath = Jhost["filepath"].ToString();
 
             var connectionInfo = ExtractSshConnectionInfo(host, port, userName, password);
