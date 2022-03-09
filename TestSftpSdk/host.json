@@ -1,0 +1,7 @@
+﻿{
+	"host": "xxx.xxx.xxx.xxx",
+	"port": 22,
+	"username": "",
+	"password": "",
+	"filepath": "/folderpath/filename.txt"
+}
